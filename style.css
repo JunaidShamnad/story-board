@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+.page-holder {
+  position: relative;
+  height: 600dvh;
+  max-height: 600vh;
+  width: 100dvw;
+  background-color: black;
+}
+
+.video-parent-section {
+  position: sticky;
+  top: 0;
+  height: 100dvh;
+  width: 100dvw;
+  color: white;
+}
+
+.video-section,
+.video-container,
+.playing-video,
+.content-holder,
+.playing-video-tag {
+  height: 100%;
+  width: 100%;
+}
+
+.content-holder {
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playing-video {
+  background-size: cover;
+  background-position: center;
+}
+
+.playing-video-tag {
+  width: 100dvw;
+  height: 100dvh;
+  object-fit: cover;
+  
+}
+
+.content-parent-section {
+  position: absolute;
+  top: 0;
+  height: 600dvh;
+  max-height:600vh;
+}
+
+.content-section {
+  height: 100dvh;
+  width: 100dvw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.212);
+}
+
+.content-section h2 {
+  font-weight: 500;
+  font-size: 35px;
+  color: white;
+}
+
+.content-section p {
+  font-weight: 300;
+  font-size: 22px;
+  color: white;
+  max-width: 60%;
+  line-height: 210%;
+  letter-spacing: 0.2px;
+}
+.content-section h4 {
+  font-weight: 400;
+  font-size: 28px;
+  color: white;
+  max-width: 60%;
+  line-height: 210%;
+  letter-spacing: 0.2px;
+}
+
+.list-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.list-holder ul{
+  font-weight: 300;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.856);
+  max-width: 60%;
+  line-height: 210%;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+
+
+/* Media queries for different screen sizes */
+
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .content-section p {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Adjust styles for even smaller screens */
+  .content-section {
+    flex-direction: column-reverse; /* Stack content vertically */
+  }
+  .content-section h2 {
+    font-size: 2rem;
+  }
+  .content-section h4 {
+    font-size: 1.2rem;
+  }
+  .content-section p {
+    font-size: 1rem;
+  }
+  .list-holder ul{
+    font-size: 0.8rem;
+  }
+
+}
+
+
+
+/* Base styles */
+#aq-form {
+  margin: 20px auto;
+  /* max-width: 500px; */
+  width: 600px;
+  max-width: 90%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: none; /* Remove default border */
+  outline: none;
+  border-bottom: 1px solid white; /* Add white bottom border */
+  background-color: transparent; /* Set transparent background */
+  font-size: 16px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.submit-button{
+  background-color: white; /* Change button color to white */
+  color: #000000; /* Choose a contrasting color for text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.submit-button:hover {
+  background-color: #f2f2f2; /* Subtle hover effect */
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  #aq-form {
+    margin: 10px auto;
+  }
+  .form-group {
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #aq-form {
+    padding: 15px;
+  }
+  input[type="text"], input[type="email"], input[type="tel"] {
+    font-size: 14px;
+  }
+}

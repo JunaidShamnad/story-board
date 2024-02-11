@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Story Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="preload"
+      as="video"
+      href="./public/video/Adobestock-609855406-Video-Hd-Preview 0Lmq8rpi(1).mp4"
+    />
+    <link rel="preload" as="video" href="./public/video/C01.mp4" />
+  </head>
+
+  <body>
+    <div class="page-holder">
+      <div class="video-parent-section">
+        <div class="video-section">
+          <div class="video-container">
+            <div class="playing-video">
+              <video class="playing-video-tag mobile" muted autoplay>
+                <source
+                  src="./public/video/Adobestock-609855406-Video-Hd-Preview 0Lmq8rpi(1).mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <video class="playing-video-tag desktop" muted autoplay>
+                <source src="./public/video/C01.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-parent-section">
+        <section class="content-section">
+          <div class="content-holder">
+            <p class="content-text">
+              As the pilot of a deserted space shuttle, you journey through the
+              tech cosmos. While traveling through celestial pit stops, you
+              encounter various situations where answering questions shapes your
+              course. Ultimately, you reach your final destination and unveil
+              your unique role in this exciting realm of HGS.
+            </p>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <div class="content-holder">
+            <h4 class="content-text">Ready? Register to get started</h4>
+          </div>
+        </section>
+
+        <section class="content-section decision-section">
+          <div class="content-holder">
+            <div class="list-holder">
+              <p class="content-text list-content">
+                Your shuttle passes over a space trading post. A strange
+                holographic map flickers, revealing hidden shortcuts through
+                cosmic wormholes. Do you take the risk?
+              </p>
+              <ul class="list-ul">
+                <li class="list-item">
+                  Excitedly gather your space mates and discuss next steps.
+                </li>
+                <li class="list-item">
+                  Confide only in your closest space mates about the map's
+                  possibilities.
+                </li>
+                <li class="list-item">
+                  Observe the discussion, chipping in when needed.
+                </li>
+                <li class="list-item">
+                  Avoid forced interaction and study the options alone.
+                </li>
+                <li class="list-item">
+                  Politely decline interaction, analyze, and navigate solo.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <div class="content-holder">
+            <!-- <h2 class="content-text">Section 4 Content</h2> -->
+            <form id="aq-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+              <button class="submit-button" type="submit">Submit</button>
+            </form>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <div class="content-holder">
+            <h2 class="content-text">Section 5 Content</h2>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <div class="content-holder">
+            <h2 class="content-text">Section 6 Content</h2>
+          </div>
+        </section>
+      </div>
+    </div>
+
+
+    
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
