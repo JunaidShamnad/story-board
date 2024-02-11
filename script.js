@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Calculate duration per content section
-  const totalVideoDuration = 90; // Replace with actual video duration
+  const totalVideoDuration = 96; // Replace with actual video duration
 
 
   // Function to update video playback and active content section
