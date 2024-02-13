@@ -1,5 +1,3 @@
-// Wait for DOM content to load
-document.addEventListener('DOMContentLoaded', function() {
 
   // Define elements and create Lenis instance
   const mobileVideo = document.querySelector('.playing-video-tag.mobile');
@@ -37,6 +35,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
   
+
+// Wait for DOM content to load
+document.addEventListener('DOMContentLoaded', function() {
+
+
   // Rest of your existing scroll animation logic using a single 'vid' variable to reference the currently active video:
   
   const vid = isMobile ? mobileVideo : desktopVideo; // Dynamically assign the active video
