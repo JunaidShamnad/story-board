@@ -34,6 +34,8 @@
     }
   });
   
+  document.addEventListener('DOMContentLoaded', function() {
+
   // Rest of your existing scroll animation logic using a single 'vid' variable to reference the currently active video:
   
   const vid = isMobile ? mobileVideo : desktopVideo; // Dynamically assign the active video
