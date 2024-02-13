@@ -1,4 +1,3 @@
-
   // Define elements and create Lenis instance
   const mobileVideo = document.querySelector('.playing-video-tag.mobile');
   const desktopVideo = document.querySelector('.playing-video-tag.desktop');
@@ -35,11 +34,6 @@
     }
   });
   
-
-// Wait for DOM content to load
-document.addEventListener('DOMContentLoaded', function() {
-
-
   // Rest of your existing scroll animation logic using a single 'vid' variable to reference the currently active video:
   
   const vid = isMobile ? mobileVideo : desktopVideo; // Dynamically assign the active video
@@ -64,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const lenis = new Lenis({
     smooth: true, // Enable smooth scrolling with Lenis
     rafRaf: true, // Use requestAnimationFrame for smoother animation
-    rafMinThreshold: 32 // Adjust threshold for reduced CPU usage
+    rafMinThreshold: 2 // Adjust threshold for reduced CPU usage
   });
 
   // Calculate duration per content section
