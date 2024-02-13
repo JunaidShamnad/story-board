@@ -60,7 +60,7 @@
   const lenis = new Lenis({
     smooth: true, // Enable smooth scrolling with Lenis
     rafRaf: true, // Use requestAnimationFrame for smoother animation
-    rafMinThreshold: 2 // Adjust threshold for reduced CPU usage
+    rafMinThreshold: 4 // Adjust threshold for reduced CPU usage
   });
 
   // Calculate duration per content section
@@ -188,4 +188,4 @@
   // - Minify and compress the code for smaller file size.
   // - Profile performance in your browser's developer tools and fine-tune further.
 
-// });
+});
