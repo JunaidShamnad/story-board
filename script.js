@@ -186,4 +186,4 @@
   // - Minify and compress the code for smaller file size.
   // - Profile performance in your browser's developer tools and fine-tune further.
 
-});
+// });
