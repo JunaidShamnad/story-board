@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const lenis = new Lenis({
     smooth: true, // Enable smooth scrolling with Lenis
     rafRaf: true, // Use requestAnimationFrame for smoother animation
-    rafMinThreshold: 32 // Adjust threshold for reduced CPU usage
+    rafMinThreshold: 2 // Adjust threshold for reduced CPU usage
   });
 
   // Calculate duration per content section
